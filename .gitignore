@@ -31,5 +31,9 @@ coverage.json
 typechain
 
 #Truffle files
-/Truffle/build
-/Truffle/data
+/truffle/build
+/truffle/data
+
+#Next.js
+.next
+out/

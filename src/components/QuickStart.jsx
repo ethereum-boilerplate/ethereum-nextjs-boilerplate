@@ -98,10 +98,10 @@ export default function QuickStart({ isServerInfo }) {
               :
             </Text>
             <Text code delete={isServerInfo} style={{ display: "block" }}>
-              REACT_APP_MORALIS_APPLICATION_ID = xxxxxxxxxxxx
+              NEXT_PUBLIC_MORALIS_APPLICATION_ID = xxxxxxxxxxxx
             </Text>
             <Text code delete={isServerInfo} style={{ display: "block" }}>
-              REACT_APP_MORALIS_SERVER_URL = https://xxxxxx.grandmoralis.com:2053/server
+              NEXT_PUBLIC_MORALIS_SERVER_URL = https://xxxxxx.grandmoralis.com:2053/server
             </Text>
           </Timeline.Item>
 
