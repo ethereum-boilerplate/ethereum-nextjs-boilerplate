@@ -1,0 +1,60 @@
+{
+	"name": "ethereum-boilerplate",
+	"homepage": "http://ethereum-boilerplate.github.io/ethereum-boilerplate",
+	"version": "0.1.0",
+	"dependencies": {
+		"@ant-design/icons": "^4.7.0",
+		"@walletconnect/web3-provider": "^1.6.6",
+		"antd": "^4.16.13",
+		"moralis": "^0.0.135",
+		"next": "^12.0.4",
+		"react": "^17.0.2",
+		"react-blockies": "^1.4.1",
+		"react-dom": "^17.0.2",
+		"react-moralis": "^0.3.0",
+		"react-router": "^5.2.1",
+		"react-router-dom": "^5.3.0",
+		"react-scripts": "4.0.3",
+		"sharp": "^0.29.3",
+		"web-vitals": "^1.0.1"
+	},
+	"devDependencies": {
+		"@next/eslint-plugin-next": "^12.0.4",
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^11.1.0",
+		"@testing-library/user-event": "^12.1.10",
+		"cross-env": "^7.0.3",
+		"eslint": "^7.24.0",
+		"eslint-config-next": "^12.0.4",
+		"gh-pages": "^3.2.3",
+		"touch-cli": "^0.0.1",
+		"yarn": "^1.22.17"
+	},
+	"scripts": {
+		"dev": "next dev",
+		"start": "next start",
+		"lint": "next lint",
+		"prebuild": "yarn lint",
+		"build": "next build",
+		"postbuild": "yarn export",
+		"export": "next export",
+		"test": "next test",
+		"devchain": "node truffle/scripts/devChain.js",
+		"connect": "moralis-admin-cli connect-local-devchain",
+		"watch:events": "moralis-admin-cli add-contract",
+		"deploy": "node truffle/scripts/deployContract.js",
+		"deploy:page": "cross-env-shell \"yarn build && touch out/.nojekyll && gh-pages -d out -t true\""
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}
