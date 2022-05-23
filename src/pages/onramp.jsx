@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useMoralis } from "react-moralis";
-import Ramper from "components/ramper";
+import Ramper from "components/Ramper";
 
 function OnRamp() {
 	const [ramper, setRamper] = useState();
